@@ -96,20 +96,20 @@ def button_eq():
         second_number = float(second_number)
     e.delete(0, END)
     if op == "add":
-        e.insert(0, f_num + second_number)
+        e.insert(0, str(f_num + second_number))
     elif op == "sub":
-        e.insert(0, f_num - second_number)
+        e.insert(0, str(f_num - second_number))
     elif op == "mul":
-        e.insert(0, f_num * second_number)
+        e.insert(0, str(f_num * second_number))
     elif op == "div":
         if second_number == 0:
             e.insert(0, "∞")
         else:
-            e.insert(0, f_num / second_number)
+            e.insert(0, str(f_num / second_number))
     elif op == "root":
-        e.insert(0, math.sqrt(second_number))
+        e.insert(0, str(math.sqrt(second_number)))
     elif op == "percentage":
-        e.insert(0, second_number * 0.01)
+        e.insert(0, str(second_number * 0.01))
 
 
 # creating buttons
